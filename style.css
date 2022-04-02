@@ -1,0 +1,121 @@
+ a minimalist set of CSS resets 
+
+ default to border-box 
+html {
+  font-size 16px;
+}
+
+,
+before,
+after {
+  box-sizing border-box;
+}
+
+ adjust typography defaults 
+body {
+  margin 2em;
+  font-family helvetica, arial, sans-serif;
+  line-height 1.5;
+  background-color #272343;
+  color #fbf2d5;
+}
+
+h1{
+  font-family verdana, arial, sans-serif;
+}
+
+.game-btn{
+  display block;
+  border-radius 100%;
+  width150px;
+  height150px;
+  padding 10px;
+  margin 4px;
+  background-size cover;
+  background-position center;
+  background-repeat no-repeat;
+}
+
+.pair {
+  display flex;
+  width 100%;
+  flex 1 0;
+  justify-content space-evenly;
+  margin-bottom 20px;
+}
+
+.header {
+  position relative;
+}
+
+.lives-container {
+  position absolute;
+  top -40px;
+  right 40px;
+  text-align right;
+}
+
+.lives-container p {
+  margin 0;
+  padding 0;
+}
+
+#incorrect-text {
+  color darkred;
+}
+
+.hidden{
+  display none;
+}
+
+#button1{
+  background-color lightgreen;
+}
+#button1active, #button1.lit{
+  background-color green;
+  background-image url(httpscdn.glitch.globalf260d740-a262-4662-bc43-3c4b50900de6button1.pngv=1647731268664);
+}
+#button2{
+  background-color lightblue;
+}
+#button2active, #button2.lit{
+  background-color blue;
+  background-image url(httpscdn.glitch.globalf260d740-a262-4662-bc43-3c4b50900de6button2.jpgv=1647731712232);
+}
+#button3{
+  background-color pink;
+}
+#button3active, #button3.lit{
+  background-color red;
+  background-image url(httpscdn.glitch.globalf260d740-a262-4662-bc43-3c4b50900de6button3.pngv=1647731712232);
+}
+#button4{
+  background-color lightyellow;
+}
+#button4active, #button4.lit{
+  background-color yellow;
+  background-image url(httpscdn.glitch.globalf260d740-a262-4662-bc43-3c4b50900de6button4.jpgv=1647732230599);
+}
+#button5{
+  background-color grey;
+}
+#button5active, #button5.lit{
+  background-color black;
+  background-image url(httpscdn.glitch.globalf260d740-a262-4662-bc43-3c4b50900de6button5.jpgv=1647732238492);
+}
+#button6{
+  background-color violet;
+}
+#button6active, #button6.lit{
+  background-color purple;
+  background-image url(httpscdn.glitch.globalf260d740-a262-4662-bc43-3c4b50900de6button6.jpgv=1647732239879);
+}
+
+
+
+ images and videos max out at full width 
+img,
+video {
+  height auto;
+  max-width 100%;
+}

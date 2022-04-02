@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello world!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Hello World!
+    </h1>
+    <div class="header">
+      
+        Welcome to the game!!!
+      
+      <div class="lives-container">
+        <p>Lives : <span id="lives-left">3</span></p>
+        <p id="incorrect-text" style="display: none;">Incorrect sequence!</p>
+      </div>
+    </div>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" onclick="stopGame()" class="hidden">Stop</button>
+    
+    <p id = "clock"> Timer: </p>
+    
+    <div id="gameButtonArea">
+      <div class="pair">
+        <button class="game-btn" id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)"></button>
+        <button class="game-btn" id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)"></button>
+      </div>
+      <div class="pair">
+        <button class="game-btn" id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)"></button>
+        <button class="game-btn" id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)"></button>
+      </div>
+      <div class="pair">
+        <button class="game-btn" id="button5" onmousedown="startTone(5)" onmouseup="stopTone()" onclick="guess(5)"></button>
+        <button class="game-btn" id="button6" onmousedown="startTone(6)" onmouseup="stopTone()" onclick="guess(6)"></button>
+      </div>
+    </div>
+  </body>
+</html>
