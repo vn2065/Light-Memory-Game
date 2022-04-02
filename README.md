@@ -1,0 +1,12 @@
+# codepath-prework
+1. MDN (Mozilla Developer Network) and W3Schools for Javascript and CSS documentation, javascript.info for more JS reference
+
+2. It was a challenge creating the timer for every 'round': for every clue sequence to be played, I used the setTimeout() function for the delay. This meant I had to wrap every round in a separate setTimeout() call for it to function as a timer for every round (for the player). This was hard to figure out as there were several options aside from setInterval() - calling a function via taking it as an argument to a first function (the function to be called being the second), the Promise API, and the usage of async/await (which uses Promise internally). I finally went with using setInterval() and clearInterval() as suggested in the project guideline. Another challenge I faced was the UI portion of the project. Learning CSS and getting the layout to be exactly as I wanted it to be was difficult to implement. One of my goals was to get the buttons in pairs for easy organization. One goal I could not accomplish was making a circular layout for the game. I wanted all the buttons to be in a circular pattern and the layout to be responsive, according to the device the game is played in. I looked into flexbox and grid layouts in CSS and started learning them. MDN Docs was particularly useful as a CSS reference.
+
+3. I have not had much experience with web development before, but I did collaborate on a few projects during my undergrad. After working on this project, I would like to know more
+- about the general direction of web dev
+- what technologies can be used for more complex projects
+- about the existence of other tools relating to visualization and/or user experience
+- how front-end web dev can be improved from a security standpoint
+
+4. There are a few things: different difficulty levels - having a dropdown for choosing the difficulty and adjusting the game accordingly (eg. 4 buttons for easy, 8 buttons for hard, etc.), better graphics (using Canvas API), refactoring the code into more modular components (for reusability and reducing overhead), maybe build the game using a framework specific to HTML5 games (Phaser, Pixi.js), implementing all asynchronous behavior using async/await, and accessible UI/UX for physically challenged people with different impairments (color blindness, etc.). One more thing I would do is to secure the game from any kind of cheating, i.e. the player should not be able to manipulate front-end code.
